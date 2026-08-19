@@ -19,11 +19,11 @@ export default async function LandingPage() {
           <span className="text-base font-bold tracking-tight">StartNow</span>
         </div>
         <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="sm">
-            <Link href="/sign-in">Sign in</Link>
+          <Button render={<Link href="/sign-in" />} variant="ghost" size="sm">
+            Sign in
           </Button>
-          <Button asChild size="sm">
-            <Link href="/sign-up">Get started</Link>
+          <Button render={<Link href="/sign-up" />} size="sm">
+            Get started
           </Button>
         </div>
       </header>
@@ -44,14 +44,12 @@ export default async function LandingPage() {
           it never piles up the night before.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Button asChild size="lg">
-            <Link href="/sign-up">
-              Get started free
-              <ArrowRight className="size-4" data-icon="inline-end" />
-            </Link>
+          <Button render={<Link href="/sign-up" />} size="lg">
+            Get started free
+            <ArrowRight className="size-4" data-icon="inline-end" />
           </Button>
-          <Button asChild size="lg" variant="outline">
-            <Link href="/sign-in">Sign in</Link>
+          <Button render={<Link href="/sign-in" />} size="lg" variant="outline">
+            Sign in
           </Button>
         </div>
       </section>
